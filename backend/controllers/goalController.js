@@ -27,7 +27,7 @@ const setGoals = asyncHandler(async (req, res) => {
 })
 
 //  @desc Update goals
-// @route PUT /api/goals/id
+//  @route PUT /api/goals/id
 //  @access Private
 const updateGoals = asyncHandler(async (req, res) => {
     const goal = await Goal.findById(req.params.id);
